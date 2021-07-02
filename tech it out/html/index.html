@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> K-Cloud </title>
+  <style>
+    div#base {
+      position: relative;
+      text-align: center;
+      border: black solid 4px;
+      top: 10px;
+      bottom: 10px;
+      right: 10px;
+      left: 10px;
+      width: 96%;
+      height: 640px;
+    }
+
+    div#box1 {
+      position: relative;
+      border: black solid 9px;
+      top: 10px;
+      bottom: 10px;
+      left: 16%;
+      width: 80%;
+      border-radius: 20%;
+      height: 100%;
+      background-color: aqua;
+      box-sizing: border-box;
+    }
+
+    div#box2 {
+      position: relative;
+      border: black solid 9px;
+      top: 10px;
+      bottom: 10px;
+      left: 16%;
+      width: 80%;
+      border-radius: 20%;
+      height: 100%;
+      background-color: aqua;
+      box-sizing: border-box;
+    }
+  </style>
+  <script>
+    function exit1() {
+      document.getElementById("box1").style.backgroundColor = "aqua";
+    }
+
+    function exit2() {
+      document.getElementById("box2").style.backgroundColor = "aqua";
+    }
+
+    function hover1() {
+      document.getElementById("box1").style.backgroundColor = "yellow";
+    }
+
+    function hover2() {
+      document.getElementById("box2").style.backgroundColor = "yellow";
+    }
+
+    function deploy() {
+      document.getElementById("box1").style.backgroundColor = "lightblue";
+      document.location = "yml.html"
+    }
+
+    function cmd() {
+      document.getElementById("box2").style.backgroundColor = "lightblue";
+      document.location = "cmd.html"
+    }
+  </script>
+</head>
+
+<body style="	background-color: #FFFFFF.;	background-image: url(3d08e03cb40252526fee2036a67f07f1.gif);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+  <marquee style="box-sizing: content-box;background-color: rgb(216, 148, 60);width: 97%;border: brown solid 3px;border-radius: 10%;"></marquee>
+  <div id="base" style="	background-color: rgb(102, 255, 102);	background-image: url(f55e8059ea945abfd6804b887dd4a0af.gif);	background-position: top left;	background-size: 50%;	background-repeat: repeat;">
+    <div style="	font-size: 500%;	font-family: &quot;Courier New&quot;, Courier, monospace;	background: rgb(1, 90, 255);	position: relative;	width: 98%;	align-self: center;	left: 10px;	top: 10px;	border: 5px solid rgb(255, 238, 0);	background-image: url(3q62.gif);	background-position: top left;	background-size: 10%;	background-repeat: repeat;" class="bg-primary text-primary"><b><i>TECH IT OUT :- <u>Home</u></i></b></div>
+    <br>
+    <hr style="height:4px;border-width:70%;color: black;background-color:black;">
+    <br>
+    <div style="	width: 90%;	border: black;">
+      <br><br><br>
+      <div onclick="deploy();" onmouseover="hover1();" onmouseout="exit1();" id="box1" name="deploy" style="	text-align: center;	font-family: 'Courier New', Courier, monospace;	font-size: 600%;	background-image: url(f55e8059ea945abfd6804b887dd4a0af.gif);	background-position: top left;	background-size: 100%;	background-repeat: repeat;"><u><b>Upload YAML File</b></u></div>
+      <br><br><br><br><br>
+      <div onclick="cmd();" id="box2" onmouseover="hover2();" onmouseout="exit2();" style="	text-align: center;	font-family: &quot;Courier New&quot;, Courier, monospace;	font-size: 600%;	background-image: url(blog_post_docker.gif);	background-position: top left;	background-size: 10%;	background-repeat: repeat;"><u style="" class="shadow-sm"><b>Commands</b></u></div>
+      <br>
+    </div>
+  </div>
+  <br>
+  <marquee direction="right" style="box-sizing: content-box;background-color: rgb(216, 148, 60);width: 97%;border: brown solid 3px;border-radius: 10%;"></marquee></body>
+
+</html>
